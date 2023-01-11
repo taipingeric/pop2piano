@@ -323,9 +323,9 @@ class TransformerWrapper(pl.LightningModule):
             from IPython.display import display
             import note_seq
 
-            display("Stereo MIX", ipd.Audio(stereo, rate=sr))
-            display("Rendered MIDI", ipd.Audio(pm_y, rate=sr))
-            display("Original Song", ipd.Audio(y, rate=sr))
+#             display("Stereo MIX", ipd.Audio(stereo, rate=sr))
+#             display("Rendered MIDI", ipd.Audio(pm_y, rate=sr))
+#             display("Original Song", ipd.Audio(y, rate=sr))
             display(note_seq.plot_sequence(note_seq.midi_to_note_sequence(pm)))
 
         if save_mix:
